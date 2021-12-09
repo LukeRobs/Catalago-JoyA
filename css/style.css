@@ -237,6 +237,7 @@ section {
     font-weight: 600;
 }
 .contact {
+    max-height: 80  0px;
     background: #D8BFD8;
     background-size: cover;
 }
