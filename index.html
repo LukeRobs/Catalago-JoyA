@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Joyce</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Joy<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu();">Lançamentos</a></li>
+            <li><a href="#" onclick="toggleMenu();">Brincos</a></li>
+            <li><a href="#" onclick="toggleMenu();">Pulseiras</a></li>
+            <li><a href="#" onclick="toggleMenu();">Colares</a></li>
+            <li><a href="#" onclick="toggleMenu();">Aneis</a></li>
+            <li><a href="#" onclick="toggleMenu();">Tornozeleiras</a></li>
+        </ul>
+    </header>
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2>Acessorios Joy</h2>
+                <p>Toda joia conta uma História</p>
+                <a href="#" class="btn">Escolha a sua</a>
+            </div>
+        </section>
+        <div class="menu" id="menu">
+            <div class="title">
+                <h2>Conheça nossas Coleções</h2>
+                <p>Conheça todos os detalhes das coleções especiais da Joy</p>
+            </div>
+            <hr>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/produto1.jpg" alt="Colar de aneis">
+                    </div>
+                    <div class="text">
+                        <h3>Coleção de Verão</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/produto2.jpg" alt="Colar de aneis">
+                    </div>
+                    <div class="text">
+                        <h3>Coleção de Outono</h3>
+                    </div>
+                </div>
+                <div class="title" id="tds">
+                    <a href="#" class="btn">Ver Todos</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="expert" id="expert">
+            <div class="title">
+                <h2 class="titleText"><span>L</span>ançamentos</h2>
+                <p></p>
+            </div>
+            <hr>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/produto3.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Argola Fé</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/produto4.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Brinco Coração</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/produto5.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Pulseira em Aço</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/produto6.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Argola Trio estrelas</h3>
+                    </div>
+                </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="title white">
+                <h2 class="titleText"><span>N</span>ossos Clientes</h2>
+                <p>O que nossos CLientes falam sobre Nós</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/cliente1.jpg">
+                    </div>
+                    <div class="text">
+                    <p>Experiencia Maravilhosa, muito obrigada parabéns pelo atendimento
+                        voltarei a comprar em breve!
+                    </p>   
+                    <h3>Milena Almeida</h3>
+                    </div> 
+                </div>
+                
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/cliente 2.jpg">
+                    </div>
+                    <div class="text">
+                    <p>Site bastante simples e facil de navegar, e as joias sao
+                        maravilhosas, comprei uma pulseira e um brinco, estou amando
+                    </p>   
+                    <h3>Lais Torres</h3>
+                    </div> 
+                </div>
+                
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./Assets/cliente3.jpg">
+                    </div>
+                    <div class="text">
+                    <p>Simplesmente incrivel, comprei e chegou muito rapido, amei!!!
+                    </p>   
+                    <h3>Vitoria evellyn</h3>
+                    </div> 
+                </div>       
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+
+            function toggleMenu(){
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+        </script>  
+</body>
+</html>
